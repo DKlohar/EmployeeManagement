@@ -3,7 +3,7 @@ import axios from 'axios'
 // API address comes from the .env file (VITE_API_URL).
 // If the file is missing it falls back to port 7242.
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://localhost:7242/api',
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5075/api',
   headers: { 'Content-Type': 'application/json' },
   timeout: 15000
 })
